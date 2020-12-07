@@ -1,88 +1,101 @@
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
+	outline: 2px solid red;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+	@include for-size(mobile) {
+		width: 480px;
+	}
+
+	@include for-size(tablet) {
+		width: 768px;
+	}
+
+	@include for-size(desktop) {
+		width: 1200px;
+	}
 }
 
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 .list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
 .container .title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-  margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .title {
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
+	color: $title-text-color;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.167;
+	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 .features,
 .work-section {
-  color: $light-bg;
+	color: $light-bg;
 }
 
 .footer,
 .hero {
-  background-color: $dark-bg;
+	background-color: $dark-bg;
 }
 
 .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
-  color: $primary-text-color;
-  font-size: 16px;
-  line-height: 1.188;
-  letter-spacing: 0.03em;
+	color: $primary-text-color;
+	font-size: 16px;
+	line-height: 1.188;
+	letter-spacing: 0.03em;
 }

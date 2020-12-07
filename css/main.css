@@ -41,6 +41,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -61,6 +62,24 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -520,6 +539,16 @@ form .button {
 .footer,
 .hero {
   background-color: #2f303a;
+}
+
+.features {
+  display: inline-block;
+}
+
+@media (min-width: 480px) {
+  .features {
+    min-width: 320px;
+  }
 }
 
 .features-list {
