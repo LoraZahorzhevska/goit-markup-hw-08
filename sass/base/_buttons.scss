@@ -1,0 +1,41 @@
+.button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+
+  background-color: $accent-color;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  margin-bottom: 200px;
+}
+
+.button-footer {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  border: none;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  background-color: $accent-color;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $white;
+}
+
+.footer-icon {
+  margin-left: 10px;
+  fill: $white;
+}

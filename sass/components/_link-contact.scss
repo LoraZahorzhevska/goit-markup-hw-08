@@ -1,0 +1,26 @@
+.link-nav,
+.link-contact {
+  @extend %links-header;
+}
+
+.contact .link-contact {
+  color: $primary-text-color;
+}
+
+.logo,
+.active,
+.link-nav:hover,
+.link-nav:focus,
+.link-contact:hover,
+.link-contact:focus,
+.link-footer:hover,
+.link-footer:focus {
+  color: $accent-color;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-footer,
+.address {
+  @extend %links-footer;
+}
