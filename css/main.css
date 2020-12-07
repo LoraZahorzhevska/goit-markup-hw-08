@@ -319,6 +319,7 @@ img {
 .form-comment {
   outline: none;
   resize: none;
+  padding-left: 16px;
 }
 
 .form-comment:hover, .form-comment:focus {
@@ -413,6 +414,7 @@ form .button {
 
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .logo {
