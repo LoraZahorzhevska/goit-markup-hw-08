@@ -633,6 +633,12 @@ form .button {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
