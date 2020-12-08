@@ -1,39 +1,41 @@
 .social-icons {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+
+	padding-bottom: 30px;
 }
 
 .social-icons-item:not(:last-child) {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
 
-  background-color: $white;
+	background-color: $white;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
 
-  &:hover .social-icons-svg,
-  &:focus .social-icons-svg {
-    fill: $white;
+	&:hover .social-icons-svg,
+	&:focus .social-icons-svg {
+		fill: $white;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
 }
 .social-icons-svg {
-  width: 20px;
-  height: 20px;
+	width: 20px;
+	height: 20px;
 
-  fill: $icons;
+	fill: $icons;
 }

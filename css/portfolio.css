@@ -225,6 +225,7 @@ p {
 .social-icons {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .social-icons-item:not(:last-child) {
