@@ -23,7 +23,6 @@ img {
 }
 
 .container {
-	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
@@ -67,8 +66,13 @@ img {
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include for-size(desktop) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .title {
