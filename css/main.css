@@ -413,13 +413,27 @@ form .button {
 }
 
 .container-input {
-  margin-left: 93px;
-  padding-top: 72px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
-.form-field-footer {
-  display: flex;
+@media (min-width: 1200px) {
+  .container-input {
+    margin-left: 93px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-field-footer {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-field-footer {
+    display: flex;
+  }
 }
 
 .form-input-footer {
@@ -435,6 +449,23 @@ form .button {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .form-input-footer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-input-footer {
+    display: block;
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header {
@@ -867,17 +898,54 @@ form .button {
   fill: #afb1b8;
 }
 
-.container-address {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
-.container-footer {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .container-address {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-address {
+    margin-top: 60px;
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-address {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+  }
 }
 
 .container-footer .logo {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-adaptive {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-adaptive {
+    display: flex;
+  }
 }
 
 .footer-item:not(:last-child) {
@@ -906,10 +974,25 @@ form .button {
   display: flex;
 }
 
-.container-social {
-  margin-left: 70px;
-  padding-top: 75px;
-  padding-bottom: 97px;
+@media screen and (max-width: 767px) {
+  .container-social {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-social {
+    margin-top: 65px;
+    margin-right: 74px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-social {
+    margin-left: 70px;
+    padding-top: 75px;
+    padding-bottom: 97px;
+  }
 }
 
 .container-social .social-icons-link {
