@@ -290,12 +290,21 @@ p {
 }
 
 .header {
+  position: relative;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
 .header .logo {
   margin-right: 93px;
+}
+
+.header-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .header-container {
