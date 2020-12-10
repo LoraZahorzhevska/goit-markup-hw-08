@@ -244,10 +244,22 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   transition: transform 0.5s;
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .is-hidden .modal {

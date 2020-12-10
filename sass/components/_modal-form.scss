@@ -1,125 +1,147 @@
 .form-modal {
-	margin-right: 40px;
-	margin-left: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .form-field {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
-	&:not(:last-child) {
-		margin-bottom: 10px;
-	}
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .form-label {
-	margin-bottom: 4px;
+  margin-bottom: 4px;
 
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.166;
-	letter-spacing: 0.01em;
-	color: $primary-text-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @include font-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-icon {
-	position: absolute;
-	top: 50%;
-	left: 12px;
-	bottom: 11px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  bottom: 11px;
 
-	width: 18px;
-	height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .form-input {
-	margin: 0;
-	padding-top: 11px;
-	padding-right: 12px;
-	padding-bottom: 11px;
-	padding-left: 42px;
+  margin: 0;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  padding-left: 42px;
 
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-	outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
 
-	&:hover + .form-icon,
-	&:focus + .form-icon {
-		fill: $accent-color;
-	}
+  &:hover + .form-icon,
+  &:focus + .form-icon {
+    fill: $accent-color;
+  }
 
-	&:hover,
-	&:focus {
-		border: 1px solid $accent-color;
-	}
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 .form-comment {
-	outline: none;
-	resize: none;
-	padding-left: 16px;
+  outline: none;
+  resize: none;
+  padding-left: 16px;
 
-	&:hover,
-	&:focus {
-		border: 1px solid $accent-color;
-	}
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 .modal-agree {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	color: $primary-text-color;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $primary-text-color;
 
-	& a {
-		color: $accent-color;
-		text-decoration: underline;
-	}
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
-	& input[type='checkbox'] {
-		opacity: 0;
-	}
+  @include font-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
-	& label {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  font-weight: 400;
 
-	& label::before {
-		content: '';
-		width: 16px;
-		height: 15px;
-		margin-right: 10px;
-	}
+  letter-spacing: 0.03em;
 
-	& input[type='checkbox']:focus + label::before {
-		outline: $accent-color auto 1px;
-	}
+  & a {
+    color: $accent-color;
+    text-decoration: underline;
+  }
 
-	& input[type='checkbox'] + label::before {
-		background: url('../images/check-before.svg');
-	}
+  & input[type="checkbox"] {
+    opacity: 0;
+  }
 
-	& input[type='checkbox']:checked + label::before {
-		background: url('../images/check-after.svg');
-	}
+  & label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & label::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  & input[type="checkbox"]:focus + label::before {
+    outline: $accent-color auto 1px;
+  }
+
+  & input[type="checkbox"] + label::before {
+    background: url("../images/check-before.svg");
+  }
+
+  & input[type="checkbox"]:checked + label::before {
+    background: url("../images/check-after.svg");
+  }
 }
 form .button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	padding-left: 55px;
-	padding-right: 55px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
 
-	width: 200px;
-	height: 50px;
+  width: 200px;
+  height: 50px;
 }

@@ -26,8 +26,16 @@
 
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  min-height: 581px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @include for-size(desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   background-color: $white;
   transition: transform 0.5s;
 
