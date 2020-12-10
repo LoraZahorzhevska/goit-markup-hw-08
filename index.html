@@ -12,7 +12,7 @@
   </head>
   <body >    
     <!-- шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class=" container header-container">
       <nav class="navigation">
         <a href="index.html" class="logo list">Web<span class="logo-header">Studio</span></a>
@@ -28,6 +28,12 @@
             <a href="#contact"class="link-nav list">Контакты</a>
           </li>
         </ul>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-header-close" href="./images/sprite.svg#header-close"></use>
+            <use class="icon-header-lines" href="./images/sprite.svg#header-lines"></use>
+          </svg>
+        </button>
       </nav>
       <address class="contact list">
         <a href="mailto:info@devstudio.com" class="link-contact list">
@@ -43,7 +49,7 @@
           +38 096 111 11 11</a>
       </address>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- герой -->
       <section class="hero">
@@ -463,5 +469,6 @@
     </div> 
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

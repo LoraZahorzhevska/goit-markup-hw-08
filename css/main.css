@@ -571,6 +571,26 @@ form .button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-header-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-header-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-header-lines {
+  display: none;
+}
+
 .hero {
   height: 600px;
   max-width: 1600px;
