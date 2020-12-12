@@ -48,5 +48,15 @@
 	}
 }
 .filters-container {
-	margin-bottom: 34px;
+	@include for-size(mobile-only) {
+		margin-bottom: 40px;
+	}
+
+	@include for-size(tablet) {
+		margin-bottom: 30px;
+	}
+
+	@include for-size(desktop) {
+		margin-bottom: 50px;
+	}
 }
