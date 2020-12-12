@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+	outline: 2px solid red;
 }
 
 body {
@@ -22,7 +23,7 @@ img {
 }
 
 .container {
-	width: 1200px;
+	// width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
@@ -43,6 +44,10 @@ img {
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
+
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+	}
 
 	color: $light-bg;
 }
