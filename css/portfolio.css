@@ -303,7 +303,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .header-container {
+  .for-adaptive {
     display: flex;
     max-width: 480px;
     max-height: 60px;
@@ -311,14 +311,27 @@ p {
     flex-grow: 1;
     border-bottom: 1px solid #ececec;
   }
-  .header-container .logo {
+  .for-adaptive .logo {
     margin-top: 16px;
     margin-bottom: 16px;
   }
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (min-width: 768px) {
+  .for-adaptive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .for-adaptive .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.menu-container {
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -332,10 +345,29 @@ p {
   }
 }
 
+.menu-container.is-open {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .navigation {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: inline-flex;
   }
 }
 
@@ -348,13 +380,39 @@ p {
   }
 }
 
-.contact {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .link-contact:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-contact:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -366,7 +424,7 @@ p {
 }
 
 .contact-icons-svg {
-  margin-right: 10px;
+  margin-right: 8px;
   vertical-align: middle;
   fill: #757575;
 }
@@ -388,6 +446,13 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .link-nav {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .link-nav {
     position: relative;
     display: inline-block;
