@@ -668,6 +668,12 @@ p {
   }
 }
 
+@media (max-width: 767px) {
+  .gallery-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .gallery-item {
   border: 1px solid #eeeeee;
   background-color: #ffffff;

@@ -24,6 +24,12 @@
 	}
 }
 
+.gallery-item:not(:last-child) {
+	@include for-size(mobile-only) {
+		margin-bottom: 30px;
+	}
+}
+
 .gallery-item {
 	@include for-size(tablet) {
 		flex-basis: calc(100% / 2 - 30px);
