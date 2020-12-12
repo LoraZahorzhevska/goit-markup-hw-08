@@ -528,7 +528,7 @@ form .button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .for-adaptive {
     display: flex;
     justify-content: space-between;
@@ -538,6 +538,14 @@ form .button {
     margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .for-adaptive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -560,6 +568,12 @@ form .button {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .menu-container {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navigation {
     margin-top: 60px;
@@ -573,6 +587,12 @@ form .button {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    margin-right: 305px;
   }
 }
 
@@ -603,15 +623,20 @@ form .button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
-    display: flex;
-    flex-direction: column;
     margin-left: 84px;
     padding-top: 21px;
     padding-bottom: 21px;
     font-size: 12px;
     line-height: 1.166;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -621,9 +646,15 @@ form .button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .link-contact:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-contact:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -634,10 +665,30 @@ form .button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link-contact {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-contact {
+    display: inline-flex;
+  }
+}
+
 .contact-icons-svg {
   margin-right: 8px;
   vertical-align: middle;
   fill: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-icons-svg {
+    display: block;
+  }
 }
 
 .link-contact:hover,

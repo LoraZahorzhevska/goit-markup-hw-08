@@ -21,7 +21,7 @@
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -31,6 +31,12 @@
 			padding-top: 26px;
 			padding-bottom: 26px;
 		}
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
@@ -48,6 +54,10 @@
 	&.is-open {
 		display: block;
 	}
+
+	@include for-size(desktop) {
+		align-items: center;
+	}
 }
 
 .navigation {
@@ -61,6 +71,10 @@
 		align-items: center;
 		padding-top: 32px;
 		padding-bottom: 32px;
+	}
+
+	@include for-size(desktop) {
+		margin-right: 305px;
 	}
 }
 
@@ -91,15 +105,18 @@
 		margin-bottom: 60px;
 	}
 
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: column;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-left: 84px;
 		padding-top: 21px;
 		padding-bottom: 21px;
 
 		font-size: 12px;
 		line-height: 1.166;
+	}
+
+	@include for-size(desktop) {
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 }
 
@@ -108,8 +125,12 @@
 		margin-bottom: 16px;
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-bottom: 10px;
+	}
+
+	@include for-size(desktop) {
+		margin-right: 30px;
 	}
 	// margin-right: 50px;
 }
@@ -119,6 +140,17 @@
 		display: block;
 		text-align: center;
 	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+
+		font-size: 12px;
+		line-height: 1.166;
+	}
+
+	@include for-size(desktop) {
+		display: inline-flex;
+	}
 }
 
 .contact-icons-svg {
@@ -126,6 +158,10 @@
 	vertical-align: middle;
 
 	fill: $primary-text-color;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
 }
 
 .link-contact:hover,
