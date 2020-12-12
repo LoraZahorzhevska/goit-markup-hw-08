@@ -1,16 +1,21 @@
 .logo-footer,
 .address {
-  color: $white;
+	color: $white;
 }
 
 .logo-header {
-  color: black;
+	color: black;
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+	@media screen and (max-width: 1199px) {
+		font-size: 24px;
+		line-height: 1.38;
+	}
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
 }
